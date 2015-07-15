@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dealfaro.luca.clicker.ChatActivity"
+    android:background="#fffffbc6">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlistView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/PeditText"
+        android:paddingBottom="5dp"
+        android:background="#ffddfffd" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PeditText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffdedede"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/post_msg"
+        android:id="@+id/button3"
+        android:onClick="pclickButton"
+        android:background="#fffffd28"
+        android:backgroundTint="#ffb8ff41"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/PlistView"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_toEndOf="@+id/space2"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space2"
+        android:layout_toRightOf="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="REFRESH"
+        android:id="@+id/button4"
+        android:onClick="prefreshButton"
+        android:background="#ffffaea7"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp" />
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

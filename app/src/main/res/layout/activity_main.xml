@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#fffefff5">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/editText"
+        android:paddingBottom="5dp"
+        android:background="#ffddfffd" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffdedede"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/post_msg"
+        android:id="@+id/button"
+        android:onClick="clickButton"
+        android:background="#fffffd28"
+        android:backgroundTint="#ffb8ff41"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space"
+        android:layout_toRightOf="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="REFRESH"
+        android:id="@+id/button2"
+        android:onClick="refreshButton"
+        android:background="#ffffaea7"
+        android:layout_alignTop="@+id/space"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/latView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lngView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+</RelativeLayout>
